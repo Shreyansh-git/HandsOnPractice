@@ -1,0 +1,14 @@
+.mainDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.inputText {
+  display: flex;
+  justify-content: flex-start;
+  width: 190px;
+}
+.checkbox {
+  margin: 10px;
+}

@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+// import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Rating from "./components/RatingAndFeedback/Rating";
+import Home from "./components/Home";
+import Dummy from "./dummy";
+import HamburgerMenu from "./components/HamburgerMenu/index.js";
+import ToDoList from "./components/ToDoList";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <HamburgerMenu />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/rating" element={<Rating />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/dummy" element={<Dummy />} />
+        <Route path="/todo" element={<ToDoList />} />
+      </Routes>
+    </Router>
   );
 }
 
