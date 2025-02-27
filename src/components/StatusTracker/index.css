@@ -1,0 +1,28 @@
+.container-status {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.parent {
+  display: flex;
+  align-items: center;
+}
+.circle {
+  height: 20px;
+  width: 20px;
+  background-color: blue;
+  border-radius: 100%;
+}
+.line {
+  height: 4px;
+  width: 40px;
+  background-color: red;
+}
+.active {
+  background-color: green;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}

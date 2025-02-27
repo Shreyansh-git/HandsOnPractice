@@ -1,0 +1,10 @@
+.list-view {
+  cursor: pointer;
+  max-height: 100px;
+  overflow: scroll;
+}
+.main-container {
+  max-width: fit-content;
+  margin: auto;
+  margin-top: 100px;
+}

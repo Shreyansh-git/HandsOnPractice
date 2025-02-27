@@ -1,4 +1,4 @@
-.mainDiv {
+.main-div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,5 +16,4 @@
   margin: 30px;
   padding: 10px;
   width: 300px;
-  /* margin: 100px; */
 }

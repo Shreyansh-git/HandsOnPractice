@@ -1,0 +1,10 @@
+.folder-div {
+  margin-left: 30px;
+  cursor: pointer;
+}
+.folder-name {
+  display: flex;
+}
+.add-folder-btn {
+  margin: 10px;
+}

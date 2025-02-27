@@ -1,0 +1,28 @@
+.main-container-comment {
+  margin-left: 10px;
+}
+.child-container-comment {
+  display: flex;
+}
+.circle-comment {
+  height: 6px;
+  width: 6px;
+  background-color: black;
+  border-radius: 100%;
+  display: flex;
+  margin-top: 8px;
+  margin-right: 10px;
+}
+.line-comment {
+  border-left: 1px solid black;
+  border-spacing: 15px;
+}
+.random-content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+  margin-left: 2px;
+}
+.someContent {
+  min-height: 20px;
+}

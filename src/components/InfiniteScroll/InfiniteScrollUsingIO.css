@@ -1,0 +1,12 @@
+.main-container-ISUIO {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.container-ISUIO {
+  height: 200px;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}

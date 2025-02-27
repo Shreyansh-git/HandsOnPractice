@@ -1,5 +1,4 @@
 import "./rating.css";
-
 import { useState, useRef } from "react";
 import StarComponent from "./StarComponent";
 
@@ -19,7 +18,7 @@ export default function Rating() {
   }
 
   return (
-    <div className="mainDiv">
+    <div className="main-div">
       <h1> Submit your rating</h1>
       <StarComponent
         arr={arr}

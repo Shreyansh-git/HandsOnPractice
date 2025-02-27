@@ -33,12 +33,42 @@ const HamburgerMenu = ({ setValue }) => {
         </li>
         <li>
           <Link to="/language">
-            <select onChange={(e) => setValue(e.target.value)}>
+            <select
+              className="dropDown"
+              onChange={(e) => setValue(e.target.value)}
+            >
               <option value="english">english</option>
               <option value="hindi">hindi</option>
               <option value="marathi">marathi</option>
             </select>
           </Link>
+        </li>
+        <li>
+          <Link to="/autoComplete">AutoComplete</Link>
+        </li>
+        <li>
+          <Link to="/folderStructure">FolderStructure</Link>
+        </li>
+        <li>
+          <Link to="/multiCheckbox">Multi Checkbox</Link>
+        </li>
+        <li>
+          <Link to="/statusTracker">Status Tracker</Link>
+        </li>
+        <li>
+          <Link to="/trafficSignal">Traffic Signal</Link>
+        </li>
+        <li>
+          <Link to="/infiniteComment">Infinite Comment</Link>
+        </li>
+        <li>
+          <Link to="/ticTacToe">Tic Tac Toe</Link>
+        </li>
+        <li>
+          <Link to="/slidingWindow">Sliding Window</Link>
+        </li>
+        <li>
+          <Link to="/infiniteScroll">Infinite Scroll</Link>
         </li>
       </ul>
     </nav>

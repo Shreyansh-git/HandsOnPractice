@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import UserProvider from ".";
+import UserProvider from "./index.js";
 
 const Language = () => {
   const contextValue = useContext(UserProvider);

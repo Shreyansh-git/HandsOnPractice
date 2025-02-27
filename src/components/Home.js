@@ -16,7 +16,14 @@ const Home = () => {
   };
 
   return (
-    <div style={{ height: "100px", width: "100px" }}>
+    <div
+      style={{
+        height: "200px",
+        width: "600px",
+        "max-width": "fit-content",
+        margin: "auto",
+      }}
+    >
       <HighchartsReact highcharts={Highcharts} options={options} />
     </div>
   );

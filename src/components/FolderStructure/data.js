@@ -1,0 +1,50 @@
+export const folderData = {
+  name: "Movies",
+  id: "1",
+  type: "Folder",
+  isOpen: true,
+  parent: null,
+  child: [
+    {
+      name: "DDLJ",
+      id: "2",
+      type: "Folder",
+      parent: "1",
+      isOpen: true,
+      child: [],
+    },
+    {
+      name: "YDHD",
+      id: "3",
+      type: "Folder",
+      isOpen: true,
+      parent: "1",
+      child: [],
+    },
+    {
+      name: "MELA",
+      id: "4",
+      type: "Folder",
+      isOpen: true,
+      parent: "1",
+      child: [
+        {
+          name: "RACE",
+          id: "5",
+          type: "Folder",
+          isOpen: true,
+          parent: "4",
+          child: [],
+        },
+        {
+          name: "DON",
+          id: "6",
+          type: "Folder",
+          isOpen: true,
+          parent: "4",
+          child: [],
+        },
+      ],
+    },
+  ],
+};

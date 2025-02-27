@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ledger Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+
+        h2,
+        h3 {
+            text-align: center;
+        }
+
+        .header {
+            border-bottom: 2px solid black;
+            margin-block: 10px;
+        }
+
+        .header-field {
+            display: flex;
+        }
+
+        .header p {
+            margin: 5px 0;
+        }
+
+        .child1 {
+            min-width: 300px;
+            width: 300px;
+        }
+
+        .page-number {
+            text-align: right;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="page">
+            <div class="page-number">Page No. 1</div>
+            <div class="header">
+                <div class="header-field">
+                    <p class="child1"><strong>Company Code :</strong> <span th:text="${companyCode}"></span></p>
+                    <p><strong>Company Name :</strong> <span th:text="${companyName}"></span></p>
+                </div>
+                <div class="header-field">
+                    <p class="child1"><strong>Customer Code :</strong> <span th:text="${customerCode}"></span></p>
+                    <p><strong>Cust Name (Legal) :</strong> <span th:text="${customerLegalName}"></span></p>
+                </div>
+                <div class="header-field">
+                    <p class="child1"><strong>City :</strong> <span th:text="${city}"></span></p>
+                    <p><strong>Cust Name (Trade) :</strong> <span th:text="${customerTradeName}"></span></p>
+                </div>
+                <div class="header-field">
+                    <p class="child1"><strong>Period From :</strong> <span th:text="${periodFrom}"></span></p>
+                    <p><strong>Period To :</strong> <span th:text="${periodTo}"></span></p>
+                </div>
+            </div> <!-- Dynamic Table Headers -->
+            <table>
+                <thead>
+                    <tr>
+                        <th th:each="header : ${tableHeaders}" th:text="${header}"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="entry : ${ledgerEntries}">
+                        <!-- Loop through each entry, dynamic columns -->
+                        <td th:each="header : ${tableHeaders}" th:text="${entry[header]}"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

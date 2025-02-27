@@ -1,0 +1,17 @@
+.topDummy {
+  display: flex;
+  justify-content: center;
+}
+.mainDummy {
+}
+.dummyChild {
+  font-size: 100px;
+  width: 100px;
+  cursor: pointer;
+}
+.activeDummy {
+  color: yellow;
+}
+.listDummy {
+  margin: 100px;
+}
